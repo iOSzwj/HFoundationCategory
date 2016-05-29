@@ -1,7 +1,7 @@
 
 // 二维码
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (QRCode)
 
