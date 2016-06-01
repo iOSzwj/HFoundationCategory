@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.summary      = "Foundation的分类"
 
   s.description  = <<-DESC
+Foundation的分类
                    DESC
 
   s.homepage     = "https://github.com/hare27/HFoundationCategory"
