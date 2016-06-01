@@ -39,7 +39,11 @@
         id value;
         // 排除系统关键字
         if ([self respondsToSelector:@selector(modelReplaceKeyForSystem)] ) {
-            value = dict[[self modelReplaceKeyForSystem][key]];
+            if ([self modelReplaceKeyForSystem][key]) {
+                value = dict[[self modelReplaceKeyForSystem][key]];
+            }else{
+                value = dict[key];
+            }
         }else{
             value = dict[key];
         }
