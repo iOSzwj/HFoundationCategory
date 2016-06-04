@@ -19,4 +19,11 @@
 - (NSString *)hmacSHA256StringWithKey:(NSString *)key;
 - (NSString *)hmacSHA512StringWithKey:(NSString *)key;
 
+
+/** 字符串转des加密字符串*/
+- (NSString *)base64StringFromKye:(NSString *)key;
+
+/** 解密des字符串*/
+- (NSString *)decodingFromBase64StringWithKye:(NSString *)key;
+
 @end
