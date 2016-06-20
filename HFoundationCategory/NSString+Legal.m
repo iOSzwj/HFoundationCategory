@@ -53,46 +53,4 @@
     return [prediate evaluateWithObject:self];
 }
 
-/** 路径下所有文件的大小*/
--(NSInteger)fileSize{
-    
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    
-    // 是否是文件夹
-    BOOL isDirectory;
-    
-    // 路径是否存在
-    BOOL isExist = [fileManager fileExistsAtPath:self isDirectory:&isDirectory];
-    
-    // 如果文件不存在，就返回0；
-    if (isExist == NO) {
-        return 0;
-    }
-    
-    // 如果不是文件夹，就说明是一个文件
-    if (isDirectory == NO) {
-        NSDictionary *attributes = [fileManager attributesOfItemAtPath:self error:nil];
-        return [attributes[NSFileSize] integerValue];
-    }
-    
-    // 能进到这一步，说明是一个文件夹，就遍历该目录下得所有文件路径
-    NSArray *subPaths = [fileManager subpathsAtPath:self];
-    
-    NSInteger totalByteSize = 0;
-    
-    for (NSString *subPath in subPaths) {
-        // 拼接成全路径
-        NSString *fullSubPath = [self stringByAppendingPathComponent:subPath];
-        [fileManager fileExistsAtPath:fullSubPath isDirectory:&isDirectory];
-        // 如果不是文件夹，就说明是文件
-        if (isDirectory == NO) {
-            
-            NSInteger fileSeze = [[fileManager attributesOfItemAtPath:fullSubPath error:nil][NSFileSize] integerValue];
-            
-            totalByteSize += fileSeze;
-        }
-    }
-    return totalByteSize;
-}
-
 @end

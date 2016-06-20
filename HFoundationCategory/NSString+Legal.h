@@ -5,7 +5,6 @@
 // 3 判断字符串本身是否为合法的手机号
 // 4 判断字符串本身是否为合法的ip地址
 // 5 判断字符串本身是否为合法的URL
-// 6 计算一个路径下得所有文件的大小
 
 #import <Foundation/Foundation.h>
 
@@ -26,7 +25,5 @@
 /** 判断字符串本身是否为合法的URL*/
 -(BOOL)isURL;
 
-/** 路径下所有文件的大小*/
--(NSInteger)fileSize;
 
 @end
