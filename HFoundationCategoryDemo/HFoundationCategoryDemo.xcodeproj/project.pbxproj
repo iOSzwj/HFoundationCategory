@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41837B131E8F3D2E00BCE43A /* NSString+file.m in Sources */ = {isa = PBXBuildFile; fileRef = 41837B121E8F3D2E00BCE43A /* NSString+file.m */; };
+		41837B161E8F3D9600BCE43A /* NSString+Sub.m in Sources */ = {isa = PBXBuildFile; fileRef = 41837B151E8F3D9600BCE43A /* NSString+Sub.m */; };
 		B87378691CFB1B3F002A5E25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B87378681CFB1B3F002A5E25 /* main.m */; };
 		B873786C1CFB1B3F002A5E25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B873786B1CFB1B3F002A5E25 /* AppDelegate.m */; };
 		B873786F1CFB1B3F002A5E25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B873786E1CFB1B3F002A5E25 /* ViewController.m */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41837B111E8F3D2E00BCE43A /* NSString+file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+file.h"; sourceTree = "<group>"; };
+		41837B121E8F3D2E00BCE43A /* NSString+file.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+file.m"; sourceTree = "<group>"; };
+		41837B141E8F3D9600BCE43A /* NSString+Sub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sub.h"; sourceTree = "<group>"; };
+		41837B151E8F3D9600BCE43A /* NSString+Sub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sub.m"; sourceTree = "<group>"; };
 		B87378641CFB1B3F002A5E25 /* HFoundationCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFoundationCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87378681CFB1B3F002A5E25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B873786A1CFB1B3F002A5E25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +109,8 @@
 		B873787E1CFB1B6D002A5E25 /* HFoundationCategory */ = {
 			isa = PBXGroup;
 			children = (
+				41837B111E8F3D2E00BCE43A /* NSString+file.h */,
+				41837B121E8F3D2E00BCE43A /* NSString+file.m */,
 				B873787F1CFB1B6D002A5E25 /* NSObject+KVO.h */,
 				B87378801CFB1B6D002A5E25 /* NSObject+KVO.m */,
 				B87378811CFB1B6D002A5E25 /* NSObject+Model.h */,
@@ -115,6 +123,8 @@
 				B87378881CFB1B6D002A5E25 /* NSString+Legal.m */,
 				B87378891CFB1B6D002A5E25 /* NSString+QRCode.h */,
 				B873788A1CFB1B6D002A5E25 /* NSString+QRCode.m */,
+				41837B141E8F3D9600BCE43A /* NSString+Sub.h */,
+				41837B151E8F3D9600BCE43A /* NSString+Sub.m */,
 			);
 			name = HFoundationCategory;
 			path = ../../HFoundationCategory;
@@ -212,12 +222,14 @@
 				B873788E1CFB1B6D002A5E25 /* NSString+Hash.m in Sources */,
 				B873788B1CFB1B6D002A5E25 /* NSObject+KVO.m in Sources */,
 				B873788D1CFB1B6D002A5E25 /* NSString+Frame.m in Sources */,
+				41837B131E8F3D2E00BCE43A /* NSString+file.m in Sources */,
 				B873788F1CFB1B6D002A5E25 /* NSString+Legal.m in Sources */,
 				B873786F1CFB1B3F002A5E25 /* ViewController.m in Sources */,
 				B87378901CFB1B6D002A5E25 /* NSString+QRCode.m in Sources */,
 				B873786C1CFB1B3F002A5E25 /* AppDelegate.m in Sources */,
 				B87378961CFB1BCD002A5E25 /* Student.m in Sources */,
 				B87378691CFB1B3F002A5E25 /* main.m in Sources */,
+				41837B161E8F3D9600BCE43A /* NSString+Sub.m in Sources */,
 				B873788C1CFB1B6D002A5E25 /* NSObject+Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
