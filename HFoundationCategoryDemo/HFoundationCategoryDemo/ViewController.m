@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Student.h"
 #import "NSObject+KVO.h"
+#import "NSObject+Common.h"
 
 @interface ViewController ()
 
@@ -39,5 +40,12 @@
     i++;
     _stu.name = [NSString stringWithFormat:@"%d",i];
 }
+- (IBAction)show:(id)sender {
+    [self showSuccessMsg:@"hello"];
+}
+- (IBAction)classShow:(id)sender {
+    [ViewController showSuccessMsg:@"class"];
+}
+
 
 @end

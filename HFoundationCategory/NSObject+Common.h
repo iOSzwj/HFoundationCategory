@@ -12,21 +12,26 @@
 
 //显示失败提示
 - (void)showErrorMsg:(NSObject *)msg;
++ (void)showErrorMsg:(NSObject *)msg;
 
 //显示成功提示
 - (void)showSuccessMsg:(NSObject *)msg;
++ (void)showSuccessMsg:(NSObject *)msg;
 
 // 显示等待消息
 - (void)showWaitingMsg:(NSString *)msg;
++ (void)showWaitingMsg:(NSString *)msg;
 
 //显示忙
 - (void)showProgress;
++ (void)showProgress;
 
 //隐藏提示
 - (void)hideProgress;
-
++ (void)hideProgress;
 
 /** 判断字符串是否为空 */
 - (BOOL) isBlankString:(NSString *)string;
++ (BOOL) isBlankString:(NSString *)string;
 
 @end
