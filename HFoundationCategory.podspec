@@ -2,11 +2,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "HFoundationCategory"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Foundation的分类"
 
   s.description  = <<-DESC
-Foundation的分类
+在NSObject+Common.h的增加了类方法
                    DESC
 
   s.homepage     = "https://github.com/hare27/HFoundationCategory"
